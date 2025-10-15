@@ -7,7 +7,8 @@
     <link rel="icon" type="image/x-icon" href="https://static.photos/technology/200x200/42">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
         body {
             font-family: 'Poppins', sans-serif;
@@ -46,10 +47,9 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-bg text-white py-20">
-        <div class="container mx-auto px-6 text-center">
+    <!-- Hero Section with 3D Model -->
+    <section class="relative hero-bg text-white py-20 overflow-hidden">
+        <div class="container mx-auto px-6 text-center relative z-10">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Powering Pokiri's Future</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
                 Reliable, affordable, and sustainable energy for our community
@@ -58,9 +58,21 @@
                 Our Energy Promise
             </a>
         </div>
+        <div class="absolute inset-0">
+            <model-viewer 
+                src="https://modelviewer.dev/shared-assets/models/transmission-tower.glb"
+                alt="3D power transmission tower model"
+                auto-rotate
+                camera-controls
+                interaction-prompt="none"
+                style="width: 100%; height: 100%; opacity: 0.2;"
+            ></model-viewer>
+        </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Add model-viewer script -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<!-- Stats Section -->
     <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
