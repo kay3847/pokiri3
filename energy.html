@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Energy Mix | Pokiri Electric Cooperative</title>
+    <link rel="icon" type="image/x-icon" href="https://static.photos/technology/200x200/42">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .energy-card {
+            transition: all 0.3s ease;
+        }
+        .energy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="zap" class="w-8 h-8 text-yellow-400"></i>
+                    <span class="text-xl font-bold">Pokiri Electric Cooperative</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="energy.html" class="font-semibold hover:text-yellow-300">Energy Mix</a>
+                    <a href="leadership.html" class="hover:text-yellow-300">Leadership</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-green-700 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Sustainable Energy Mix</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Committed to net-zero emissions by 2050 through responsible energy generation
+            </p>
+        </div>
+    </section>
+
+    <!-- Energy Mix Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Powering Pokiri Responsibly</h2>
+                <p class="text-gray-700">
+                    Our diverse energy portfolio balances reliability, affordability, and environmental responsibility. 
+                    We're continuously increasing our renewable energy percentage while maintaining grid stability.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Natural Gas -->
+                <div class="energy-card bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i data-feather="droplet" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-blue-800">Natural Gas</h3>
+                    <div class="h-2 bg-gray-200 rounded-full mb-4">
+                        <div class="h-2 bg-blue-500 rounded-full" style="width: 60%"></div>
+                    </div>
+                    <p class="text-center text-gray-700 mb-4">60% of our energy mix</p>
+                    <p class="text-gray-700">
+                        Our natural gas plants provide reliable base load power with lower emissions than traditional coal plants.
+                    </p>
+                </div>
+                
+                <!-- Solar -->
+                <div class="energy-card bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center">
+                            <i data-feather="sun" class="w-8 h-8 text-yellow-600"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-blue-800">Solar</h3>
+                    <div class="h-2 bg-gray-200 rounded-full mb-4">
+                        <div class="h-2 bg-yellow-500 rounded-full" style="width: 25%"></div>
+                    </div>
+                    <p class="text-center text-gray-700 mb-4">25% of our energy mix</p>
+                    <p class="text-gray-700">
+                        Our solar farms harness Pokiri's abundant sunshine, with battery storage to extend availability.
+                    </p>
+                </div>
+                
+                <!-- Wind -->
+                <div class="energy-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
+                            <i data-feather="wind" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-blue-800">Wind</h3>
+                    <div class="h-2 bg-gray-200 rounded-full mb-4">
+                        <div class="h-2 bg-green-500 rounded-full" style="width: 15%"></div>
+                    </div>
+                    <p class="text-center text-gray-700 mb-4">15% of our energy mix</p>
+                    <p class="text-gray-700">
+                        Wind turbines in our northern region complement solar generation during evening hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Net Zero Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Our Path to Net Zero by 2050</h2>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row items-center mb-8">
+                        <div class="md:w-1/3 mb-6 md:mb-0">
+                            <img src="https://static.photos/industry/640x360/5" alt="Renewable Energy" class="rounded-lg w-full">
+                        </div>
+                        <div class="md:w-2/3 md:pl-8">
+                            <h3 class="text-2xl font-semibold mb-4 text-blue-700">Strategic Renewable Expansion</h3>
+                            <p class="text-gray-700 mb-4">
+                                We're investing $50 million annually to increase our renewable capacity, targeting:
+                            </p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>40% renewable mix by 2025</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>70% renewable mix by 2035</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>100% carbon-neutral by 2050</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 mb-6 md:mb-0 md:order-last">
+                            <img src="https://static.photos/technology/640x360/6" alt="Smart Grid" class="rounded-lg w-full">
+                        </div>
+                        <div class="md:w-2/3 md:pr-8">
+                            <h3 class="text-2xl font-semibold mb-4 text-blue-700">Grid Modernization</h3>
+                            <p class="text-gray-700 mb-4">
+                                Our smart grid initiatives will enable:
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Advanced demand response programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Distributed energy resource integration</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Real-time energy monitoring for members</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Pokiri Electric Cooperative</h3>
+                    <p class="mb-4">Providing reliable power to Pokiri since 2021</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><i data-feather="facebook"></i></a>
+                        <a href="#"><i data-feather="twitter"></i></a>
+                        <a href="#"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="energy.html" class="hover:text-yellow-300">Energy Mix</a></li>
+                        <li><a href="leadership.html" class="hover:text-yellow-300">Leadership</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> info@pokirielectric.com</p>
+                    <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> (555) 123-4567</p>
+                    <p><i data-feather="map-pin" class="inline mr-2"></i> 123 Power Lane, Pokiri</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 Pokiri Electric Cooperative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

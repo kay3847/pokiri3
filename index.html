@@ -1,19 +1,204 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokiri Electric Cooperative</title>
+    <link rel="icon" type="image/x-icon" href="https://static.photos/technology/200x200/42">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://static.photos/industry/1200x630/1');
+            background-size: cover;
+            background-position: center;
+        }
+        .stat-card {
+            transition: transform 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="zap" class="w-8 h-8 text-yellow-400"></i>
+                    <span class="text-xl font-bold">Pokiri Electric Cooperative</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-semibold hover:text-yellow-300">Home</a>
+                    <a href="energy.html" class="hover:text-yellow-300">Energy Mix</a>
+                    <a href="leadership.html" class="hover:text-yellow-300">Leadership</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Powering Pokiri's Future</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Reliable, affordable, and sustainable energy for our community
+            </p>
+            <a href="energy.html" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full inline-block transition">
+                Our Energy Promise
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Stat 1 -->
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-blue-700 mb-2">5,000+</div>
+                    <div class="text-gray-600">Customers Served</div>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-blue-700 mb-2">2</div>
+                    <div class="text-gray-600">Years of Service</div>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-blue-700 mb-2">100 MW</div>
+                    <div class="text-gray-600">Own Generation</div>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-blue-700 mb-2">10 Miles</div>
+                    <div class="text-gray-600">Transmission Lines</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Our Mission & Values</h2>
+                
+                <div class="bg-blue-50 p-8 rounded-lg mb-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Mission Statement</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Pokiri Electric Cooperative is committed to providing reliable, affordable, and sustainable 
+                        energy solutions to our community while fostering economic growth, environmental stewardship, 
+                        and member satisfaction through innovation and cooperative principles.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Value 1 -->
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                                <i data-feather="heart" class="text-yellow-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-blue-800">Community Focus</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            We prioritize the needs of our members above all else, ensuring fair rates and excellent service.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 2 -->
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i data-feather="shield" class="text-blue-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-blue-800">Reliability</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            Our infrastructure investments guarantee 99.9% uptime for our members' critical needs.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 3 -->
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                                <i data-feather="wind" class="text-green-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-blue-800">Sustainability</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            We're committed to reducing our environmental impact through renewable energy investments.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 4 -->
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                                <i data-feather="trending-up" class="text-purple-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-blue-800">Innovation</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            Continuously exploring new technologies to improve service and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Pokiri Electric Cooperative</h3>
+                    <p class="mb-4">Providing reliable power to Pokiri since 2021</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><i data-feather="facebook"></i></a>
+                        <a href="#"><i data-feather="twitter"></i></a>
+                        <a href="#"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="energy.html" class="hover:text-yellow-300">Energy Mix</a></li>
+                        <li><a href="leadership.html" class="hover:text-yellow-300">Leadership</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> info@pokirielectric.com</p>
+                    <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> (555) 123-4567</p>
+                    <p><i data-feather="map-pin" class="inline mr-2"></i> 123 Power Lane, Pokiri</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 Pokiri Electric Cooperative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
 </html>
