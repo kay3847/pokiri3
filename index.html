@@ -47,7 +47,7 @@
             </div>
         </div>
     </nav>
-    <!-- Hero Section with 3D Model -->
+    <!-- Hero Section with 3D Transmission Lines -->
     <section class="relative hero-bg text-white py-20 overflow-hidden">
         <div class="container mx-auto px-6 text-center relative z-10">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Powering Pokiri's Future</h1>
@@ -67,14 +67,31 @@
                 interaction-prompt="none"
                 style="width: 100%; height: 100%; opacity: 0.2;"
             ></model-viewer>
+            <model-viewer 
+                src="https://modelviewer.dev/shared-assets/models/power-lines.glb"
+                alt="3D power lines model"
+                auto-rotate
+                camera-controls
+                interaction-prompt="none"
+                style="width: 100%; height: 100%; opacity: 0.15; position: absolute; top: 0; left: 0;"
+            ></model-viewer>
         </div>
     </section>
-
-    <!-- Add model-viewer script -->
+<!-- Add model-viewer script -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<!-- Stats Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
+    <!-- Stats Section with Transmission Background -->
+    <section class="py-16 bg-gray-100 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <model-viewer 
+                src="https://modelviewer.dev/shared-assets/models/power-lines.glb"
+                alt="3D power lines model"
+                auto-rotate
+                camera-controls
+                interaction-prompt="none"
+                style="width: 100%; height: 100%; opacity: 0.05;"
+            ></model-viewer>
+        </div>
+<div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <!-- Stat 1 -->
                 <div class="stat-card bg-white p-6 rounded-lg shadow-md text-center">
@@ -102,10 +119,19 @@
             </div>
         </div>
     </section>
-
-    <!-- Mission Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
+    <!-- Mission Section with Transmission Background -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <model-viewer 
+                src="https://modelviewer.dev/shared-assets/models/transmission-tower.glb"
+                alt="3D power transmission tower model"
+                auto-rotate
+                camera-controls
+                interaction-prompt="none"
+                style="width: 100%; height: 100%; opacity: 0.03;"
+            ></model-viewer>
+        </div>
+<div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Our Mission & Values</h2>
                 
